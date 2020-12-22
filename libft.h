@@ -6,7 +6,7 @@
 /*   By: louise <lsoulier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 16:06:44 by louise            #+#    #+#             */
-/*   Updated: 2020/10/10 02:22:37 by louise           ###   ########.fr       */
+/*   Updated: 2020/12/22 15:41:39 by lsoulier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,4 +123,5 @@ t_list			*ft_lstadd_strs(int size, char **strs);
 int				get_next_line(int fd, char **line);
 int				begin_line(char **line, char *buffer, int *offset);
 int				fill_line(char **line, char *buffer, int *offset);
+int				ft_strcmp(const char *s1, const char *s2);
 #endif
