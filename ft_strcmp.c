@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lsoulier <lsoulier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/22 15:38:12 by lsoulier          #+#    #+#             */
-/*   Updated: 2020/12/22 15:41:16 by lsoulier         ###   ########.fr       */
+/*   Created: 2020/12/22 15:42:59 by lsoulier          #+#    #+#             */
+/*   Updated: 2020/12/22 15:43:06 by lsoulier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s1[i] && s2[i] && s1[i] == s2[i])
