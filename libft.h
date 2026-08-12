@@ -107,9 +107,9 @@ t_list			*ft_lstmap(t_list *l, void *(*f)(void *), void (*del)(void *));
 
 void			ft_lstrev(t_list **begin_list);
 void			ft_lstmerge(t_list **begin_list1, t_list *begin_list2);
-t_list			*ft_lstfind(t_list *begin, void *content_ref, int (*cmp)());
-void			ft_lstrm_if(t_list **b, void *cr, int (*cmp)(), void (*ffct)());
-void			ft_lstsort(t_list **begin, int (*cmp)());
+t_list			*ft_lstfind(t_list *begin, void *content_ref, int (*cmp)(void *, void *));
+void			ft_lstrm_if(t_list **b, void *cr, int (*cmp)(void *, void *), void (*ffct)(void *));
+void			ft_lstsort(t_list **begin, int (*cmp)(void *, void *));
 t_list			*ft_lstat(t_list *begin, unsigned int nbr);
 t_list			*ft_lstadd_strs(int size, char **strs);
 

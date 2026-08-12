@@ -81,6 +81,8 @@ char	**ft_split_charset(char *str, char *charset)
 	int		word_nb;
 	int		word_len;
 
+	if (!str)
+		return (NULL);
 	p_char = -1;
 	word_nb = 0;
 	words_tab = malloc(sizeof(char*) * (ft_nb_words(str, charset) + 1));
@@ -93,8 +95,12 @@ char	**ft_split_charset(char *str, char *charset)
 		{
 			word_len = ft_word_len(str, charset);
 			words_tab[word_nb] = set_new_word(str, charset, word_len);
-			if (!words_tab[word_nb++])
+			if (!words_tab[word_nb])
+			{
+				words_tab[word_nb] = NULL;
 				return (free_double_tab(words_tab));
+			}
+			word_nb++;
 		}
 		p_char = *str++;
 	}

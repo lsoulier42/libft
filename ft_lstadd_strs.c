@@ -19,6 +19,7 @@ t_list	*ft_lstadd_strs(int size, char **strs)
 	t_list	*previous;
 
 	i = -1;
+	begin = NULL;
 	previous = NULL;
 	while (++i < size)
 	{

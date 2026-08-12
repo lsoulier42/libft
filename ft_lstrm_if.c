@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_lstrm_if(t_list **b, void *cr, int (*cmp)(), void (*ffct)())
+void	ft_lstrm_if(t_list **b, void *cr, int (*cmp)(void *, void *), void (*ffct)(void *))
 {
 	t_list	*previous;
 	t_list	*current;

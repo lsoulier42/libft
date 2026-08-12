@@ -28,6 +28,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	if (!new)
 		return (NULL);
 	ft_strlcpy(new, s1, s1_len + 1);
-	ft_strlcat(new, s2, s1_len + s2_len + 1);
+	if (s2)
+		ft_strlcat(new, s2, s1_len + s2_len + 1);
 	return (new);
 }

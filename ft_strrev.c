@@ -18,6 +18,8 @@ char	*ft_strrev(const char *str)
 	int		i;
 	char	*rev;
 
+	if (!str)
+		return (NULL);
 	len = ft_strlen(str);
 	i = -1;
 	rev = (char *)malloc(sizeof(char) * (len + 1));

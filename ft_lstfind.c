@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-t_list	*ft_lstfind(t_list *begin, void *content_ref, int (*cmp)())
+t_list	*ft_lstfind(t_list *begin, void *content_ref, int (*cmp)(void *, void *))
 {
 	while (begin)
 	{
